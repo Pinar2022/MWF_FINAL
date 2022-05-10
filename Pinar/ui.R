@@ -11,19 +11,19 @@ library(shiny)
 
 list.countries <- c("Albania", "Azerbaijan", "Austria", "Armenia" ,"Bosnia and Herzegovina", "Bulgaria", "Belarus", "Croatia", "Czechia", "Denmark", "Estonia", "Finland", "France", "Georgia", "Germany", "Hungary", "Iceland", "Italy", "Lithuania", "Montenegro", "Netherlands", "Norway", "Poland", "Portugal", "Romania", "Russia", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "North Macedonia", "Great Britain" )
 
-# Define UI for application that draws a histogram
+# Define UI for application that draws a plot
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Ochange that"),
+    titlePanel("European Value Survey from 2017"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
            
            tags$h3("Overview"),
-            p("Select a country from the drop down menu, and a survey topic to explore to visualize the citizens
-              attitudes towards the chosen topic."),
+            p("Select a country from the drop down menu a) Exploration panel to visualize how dependent variables (agreement if the child suffers when the mother works and if the job should be given to a national) change by age for
+              control variables: sex and education b) regression panel assess the strength of relationship between dependent variables and predictors (age, sex, education) "),
             selectInput(inputId = 'Countries',
                         label = "Select country:",
                         choices = list.countries),
@@ -45,7 +45,7 @@ shinyUI(fluidPage(
         # Show a plot of the generated distribution
         mainPanel(
             tabsetPanel(
-                tabPanel("Plot", plotOutput("plot1")),
+                tabPanel("Exploration", plotOutput("plot1")),
                 tabPanel("Regression", verbatimTextOutput("regression"))
             )
         )

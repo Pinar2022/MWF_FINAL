@@ -44,10 +44,7 @@ shinyServer(function(input, output) {
         myformula  <- as.formula(paste0( input$YVariable, " ~ age + sex + edu"))
         m1 <- lm( myformula, data = data_clean2)
         summary(m1)
-        # xtable(summary(m1)) %>%
-        #     xtable(summary(m1)) %>%
-        #     kable(digits=3) %>%
-        #     kable_styling()
+
     })
 
 })
