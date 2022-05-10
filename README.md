@@ -1,5 +1,5 @@
-# MWF_FINAL
-Modern Work Flows final assignment
+# Modern Work Flows Final Assignment
+Description of the Project
 
 The European Values Study is a large-scale, cross-national and longitudinal survey research program on how Europeans think about family, work, religion, politics, and society. Repeated every nine years in an increasing number of countries, the survey provides insights into the ideas, beliefs, preferences, attitudes, values, and opinions of citizens all over Europe. As previous waves conducted in 1981, 1990, 1999, 2008, the fifth EVS wave maintains a persistent focus on a broad range of values.
 Questions are highly comparable across waves and regions, making EVS
